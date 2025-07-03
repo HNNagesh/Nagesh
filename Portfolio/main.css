@@ -1,0 +1,556 @@
+.board {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    background-color: #CCCCCC;
+    color: white;
+    transition: 0.3s ease-in;
+    margin-left: 0px;
+    color: white;
+
+}
+
+.pro .logo .ic {
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid#7cf03d;
+    font-size: 20px;
+    color: #7cf03d;
+    margin-top: 2%;
+}
+
+.pro .logo a:hover {
+    background: #7cf03d;
+    color: #1f242d;
+    box-shadow: 0 0 10px #7cf03d;
+}
+
+
+
+
+.dashboard {
+    margin-left: 0%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    color: #333333;
+}
+
+
+.hearder {
+    width: 100%;
+    height: fit-content;
+    background-color: aqua;
+    color: black;
+}
+
+
+.board ul {
+    padding: 13px;
+}
+
+.board li {
+
+    display: flex;
+    margin-top: 80px;
+
+}
+
+.board li span {
+    font-size: larger;
+}
+
+
+.board li .icon {
+    justify-content: center;
+    min-width: 40px;
+    font-size: 25px;
+}
+
+
+
+
+
+.board li a {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.board li a:hover {
+    transform: scale(0.9);
+}
+
+
+.board ul li :hover {
+    transform: scale(1.01);
+    color: black;
+}
+
+.board,
+.top {
+    flex: 1;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.top {
+    top: 0%;
+    left: 0%;
+    background-color: #1f242d;
+    margin-left: 170px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.top.shifted {
+    transform: translateY(300px);
+}
+
+.main {
+    text-align: left;
+}
+
+
+
+.pro {
+    justify-content: center !important;
+    align-items: center;
+    margin-top: 10%;
+
+
+}
+
+@media (max-width:800px) {
+    .pro {
+        display: block;
+        text-align: center;
+        font-size: 15px;
+    }
+
+}
+
+.img {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30%;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: greenyellow;
+    border-radius: 40px;
+    box-shadow: 0 0 10px greenyellow;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    transition: .5s;
+
+}
+
+.btn:hover {
+    background: transparent;
+    color: #7cf03d;
+    box-shadow: none;
+}
+
+.abo {
+    width: 90%;
+    margin-left: 80px;
+    margin-top: 100px;
+}
+
+.abo h1 {
+    color: #4CAF50;
+}
+
+@media (max-width: 800px) {
+    .abo {
+        margin-left: 0%;
+        width: fit-content;
+
+    }
+
+    .btn {
+        width: fit-content;
+        font-size: larger;
+    }
+
+    .img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .pro {
+        margin-top: 30%;
+    }
+
+
+
+}
+
+@media (max-width:400px){
+    .img{
+        width: 90%;
+        height: 90%;
+    }
+}
+
+
+
+.abo p {
+    font-size: large;
+}
+
+.port ul li {
+    padding: 10px;
+    list-style: none;
+    font-size: larger;
+}
+
+.edu {
+    color: black;
+    display: flex;
+    flex: 1 1 calc(0% - 0px);
+    gap: 5%;
+
+}
+
+
+.edu12 {
+    color: #4CAF50;
+    margin-top: 100px;
+    margin-left: 80px;
+    z-index: -1;
+}
+
+
+
+
+.clg {
+    position: relative;
+    margin-bottom: 2rem;
+    height: 320px;
+    width: fit-content;
+    border-radius: 2px;
+    padding: 8px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    border-left: 5px solid #4CAF50;
+    /* z-index: -1; */
+}
+
+
+.toggle-navbar-btn {
+    position: fixed;
+    margin-left: 5%;
+    margin-top: 2%;
+    height: fit-content;
+    display: none;
+    z-index: 1001;
+}
+
+@media (max-width: 800px) {
+    .edu {
+        position: relative;
+        z-index: 2000;
+        display: block;
+        width: fit-content;
+        align-items: center;
+        margin: 0;
+
+    }
+
+    .clg {
+        width: 250px;
+        height: fit-content;
+        z-index: -1;
+    }
+
+    /* .toggle-navbar-btn {
+        display: block;
+        width: 50px;
+        height: 50px !important;
+        border-radius: 50px;
+        font-size: larger;
+        font-weight: bolder;
+        cursor: pointer;
+        position: relative;
+        transition: 0.5s ease-in-out;
+        z-index: 9999;
+    } */
+    .toggle-navbar-btn {
+        display: none;
+    }
+
+    .top {
+        margin-top: 0px;
+        margin-left: 0;
+    }
+
+    .top.shifted {
+        transform: translateY();
+    }
+
+    /* .board {
+        background-color: white;
+        display: block;
+        position: relative;
+        margin-left: -800px;
+        width: 100%;
+        height: fit-content;
+        z-index: 1001;
+        padding: 5px;
+    } */
+    .board {
+        display: none;
+    }
+
+    .board ul {
+        margin-left: 2%;
+        margin-top: 8%;
+        /* padding: 5px; */
+    }
+
+    .board li {
+
+        display: flex;
+        margin-top: 20px;
+
+    }
+
+    .board li span {
+        font-size: 20px;
+    }
+
+
+    .board li .icon {
+        justify-content: center;
+        min-width: 40px;
+        font-size: 20px;
+    }
+
+    .board li a {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .board li a:hover {
+        transform: scale(0.9);
+    }
+
+    .pro .logo .ic {
+        margin-top: 6%;
+    }
+}
+
+.clg:hover {
+    transform: scale(1.01);
+}
+
+.clg .dip {
+    font-weight: bolder;
+    font-size: x-large;
+
+}
+
+.clg .uni {
+    font-size: medium;
+}
+
+.exp {
+    width: 100%;
+    margin-left: 80px;
+}
+
+@media (max-width:1180px) {
+    .exp {
+        margin-left: 0%;
+        width: fit-content;
+    }
+
+    .edu12 {
+        margin-left: 0%;
+        z-index: -1;
+    }
+
+}
+
+html {
+    margin: 0px;
+}
+
+.expe p {
+    font-size: large;
+}
+
+
+.ski {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 80px;
+}
+
+@media (max-width:1200px) {
+    .ski {
+        margin-left: 0%;
+        display: block;
+    }
+
+    .skl {
+        margin-left: 0%;
+        width: fit-content;
+
+    }
+
+    .java {
+        width: 30%;
+    }
+}
+
+.skills-name {
+    flex: 1 1 calc(50% - 20px);
+}
+
+
+.skl {
+    position: relative;
+    width: 70%;
+    height: 30px;
+    background-color: #F5F0E1;
+    border-radius: 30px;
+    overflow: hidden;
+    border-color: black;
+
+}
+
+
+.sk {
+    height: 30px;
+    border-radius: 20px;
+    text-align: right;
+    color: rgb(0, 0, 0);
+    line-height: 30px;
+    padding-right: 5px;
+    transition: width 1.5s ease-in;
+    transform: translateY(-0%);
+}
+
+
+.java {
+    width: 50%;
+    background-color: #4CAF50;
+}
+
+.html {
+    width: 80%;
+    background-color: #4CAF50;
+}
+
+.css {
+    width: 70%;
+    background-color: #4CAF50;
+}
+
+.python {
+    width: 40%;
+    background-color: #4CAF50;
+}
+
+.mysql {
+    width: 60%;
+    background-color: #4CAF50;
+}
+
+.test {
+    width: 95%;
+    background-color: #4CAF50;
+}
+
+
+.contact-form label {
+    display: block;
+    width: 100%;
+    margin-left: 80px;
+    margin-top: 15px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.contact-form input {
+    margin-left: 80px;
+    width: 80%;
+    padding: 15px;
+    border-radius: 10px;
+    border-color: red;
+
+}
+
+.contact-form textarea {
+    margin-left: 80px;
+    border-radius: 10px;
+    border-color: red;
+    width: 80%;
+    padding: 20px;
+}
+
+.contact-form button {
+    display: block;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 450px;
+    border-radius: 20px;
+    width: 30%;
+    background-color: greenyellow;
+    box-shadow: 0 0 10px greenyellow;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: transparent;
+    color: #7cf03d;
+    box-shadow: none;
+}
+
+
+@media (max-width:1150px) {
+
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea {
+        width: 40%;
+
+    }
+}
+
+@media (max-width:1150px) {
+    .contact-form button {
+        width: 20%;
+        margin-left: 130px;
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    .board {
+        margin-left: 0px !important;
+    }
+}
